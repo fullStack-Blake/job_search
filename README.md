@@ -9,7 +9,9 @@ Basically this is a Job scrapper on 3 websites.
 Each python files scrapping jobs on
 
   **https://remoteok.io**
+  
   **https://stackoverflow.com**
+  
   **https://weworkremotely.com**
  
  and presents in detail.html
