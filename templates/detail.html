@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <title>Job Scrapper</title>
+      <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <main>
+      <header>
+      <h1>Remote Jobs</h1>
+      <h3>{{num_jobs}} {{term}} jobs found</h3>
+      <div>
+        <a href="/export/{{term}}">Export to CSV</a>
+      </div>
+      <div>
+        <a href="/">&#8592; Go Back</a>
+      </div>
+      </header>
+
+
+      {% for term in terms%}
+        <h2>{{term.title}}</h2>
+        <h4>{{term.company}}</h4>
+        <a href="{{term.link}}" target="_blank">Apply</a>
+        <hr>
+      {% endfor %}
+    </main>
+  </body>
+</html>
