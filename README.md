@@ -1,12 +1,14 @@
 # Job Search Scrapper
 
 ## Prerequisites
-flask, BeautifulSoup4, requests has to be installed
-I used repl since this is small project and getting to know with flask
+**flask, BeautifulSoup4, requests** has to be installed
+I used **repl** since this is a small project
 
 ## How does this app works
-Basically this is a Job scrapper on 3 websites.
-Each python files scrapping jobs on
+This is a **Job scrapper** with user selected keyword.
+It scraps job information from 3 different websites.
+
+Each *python* files scrapping jobs on
 
   **https://remoteok.io**
   
@@ -14,13 +16,15 @@ Each python files scrapping jobs on
   
   **https://weworkremotely.com**
  
- and presents in detail.html
+ and presents in *detail.html*
  
- This is a small project using local database (fake db)
- However, if the user searched certain keyword, the fake db will store the information and re-use it.
+ This will not store the information on the 3rd party database since we only need the recent info.
+ However, to not waste our bandwidth, we will store the information while the program runs.
  
  For example, let's assume that the user searched python, react and python.
- When the user searches python for the second time, the scrapper will not send get request
- since it is stored temporarily in the database.
+ When the user searches python for the second time, the scrapper will not send the get request
+ since it is stored temporarily in the local database.
  
- User can download .csv file using hyperlink.
+ There is a hyperlink for user to download the output in .csv file
+ 
+ *Happy Coding!*
